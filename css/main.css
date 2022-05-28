@@ -1,0 +1,294 @@
+@import url(fonts.css);
+
+
+ul, li, p, a {
+    list-style: none;
+    text-decoration: none;
+}
+ul {
+    padding: 0;
+}
+h1, h2, h3 {
+    font-family: 'mtBold';
+}
+p, a {
+    font-family: 'mtReg';
+}
+.hdr {
+    height: 100vh;
+    background: #99D0F2;
+    padding-top: 20px;
+}
+.hdr-nav {
+    background: #71A8D9;
+    padding: 5px 0px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+.nav-link {
+    color: black;
+}
+.contact-btn {
+    color: white;
+    background: #161A59 !important;
+    border-radius: 15px;
+    padding: 15px 25px;
+    transition: 0.5s;
+}
+.contact-btn:hover {
+    box-shadow: 0px 0px 20px 0px #000000cf;
+    color: white;
+}
+.hdr-cont {
+    display: flex;
+}
+.hdr-block {
+    width: 700px;
+    margin-top: 40px;
+}
+.hdr-title {
+    width: 405px;
+    font-size: 40px;
+}
+.hdr-p {
+    width: 285px;
+    margin-top: 10px;
+    font-size: 24px;
+}
+.hdr-text {
+    width: 100%;
+    margin-top: 30px;
+    font-size: 20px;
+    margin-bottom: 35px;
+}
+.teacher-img {
+    width: 410px;
+    height: 410px;
+    border-radius: 85px;
+    margin-top: 40px;
+    margin-left: 60px;
+}
+.btn-block {
+    width: 100%;
+    margin-top: 20px;
+}
+.hdr-block-btn {
+    padding: 30px 15px;
+    font-size: 20px;
+    background: #13678A;
+    border-radius: 10px !important;
+    color: white;
+    margin-right: 40px;
+    transition: 0.5s;
+}
+.hdr-block-btn:hover {
+    box-shadow: 0px 0px 20px 0px #000000cf;
+    color: white;
+}
+
+
+.carousel {
+    padding: 50px 25px;
+    background: #71A8D9;
+}
+.carousel-item img {
+    height: 640px;
+    max-width: 640px;
+    margin: auto;
+    border-radius: 50px;
+}
+.carousel-down-btn {
+    background: #000 !important;
+    border: none !important;
+    height: 5px !important;
+}
+.carousel-control {
+    background: #000 !important;
+    top: 45%;
+    bottom: 45%;
+    border-radius: 50px;
+    width: 5%;
+}
+
+
+.kursi {
+    background: #99D0F2;
+    padding: 26px 0px;
+}
+.section-title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+}
+.kurs-block {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.kurs {
+    background: #71A8D9;
+    padding: 15px 10px;
+    border: 2px solid #6697c3;
+    border-radius: 15px;
+    max-width: 400px;
+    margin-top: 20px;
+    min-height: 250px;
+}/*
+.kurs.t {
+    padding: 25px 25px;
+    max-width: 1920px;
+    width: 100%;
+}
+.kurs.t > p {
+    margin-top: 20px;
+}*/
+.kurs-title {
+    text-align: center;
+}
+.kurs-text {
+    margin-top: 10px;
+}
+
+
+
+
+
+.otzivi {
+    background: #99D0F2;
+    padding: 50px 0px;
+}
+.otziv-block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.otziv-img {
+    height: 350px;
+    border: 3px solid #6697c3;
+    border-radius: 15px;
+    margin-top: 25px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.otziv-img:hover {
+    transform: scale(1.2);
+}
+
+
+
+
+
+@media (max-width:1200px) {
+    .hdr-block-btn {
+        padding: 15px;
+        margin-top: 15px;
+        text-align: center;
+    }
+    .btn-block {
+        display: flex;
+        flex-direction: column;
+    }
+    .hdr-text {
+        font-size: 18px;
+        margin-bottom: 0px;
+    }
+    .hdr-title {
+        font-size: 34px;
+    }
+    .hdr-p {
+        font-size: 20px;
+    }
+}
+@media (max-width: 992px) {
+    .teacher-img {
+        width: 300px;
+        height: 300px;
+    }
+    .kurs {
+        width: 300px;
+    }
+    .otziv-img {
+        height: 300px;
+    }
+}
+@media (max-width: 850px) {
+    .teacher-img {
+        width: 200px;
+        height: 200px;
+        margin-left: 0;
+    }
+    .hdr-title {
+        font-size: 26px;
+    }
+    .hdr-text {
+        font-size: 16px;
+    }
+    .hdr-p {
+        font-size: 20px;
+    }
+    .carousel {
+        padding: 15px 0px !important;
+    }
+}
+@media (max-width: 767px) {
+    .kurs {
+        width: 250px;
+    }
+    .otziv-img {
+        height: 250px;
+    }
+}
+@media (max-width: 700px) {
+    .teacher-img {
+        display: none;
+    }
+    .carousel-item > img {
+        height: 425px;
+        width: 425px;
+    }
+    .btn-block {
+        justify-content: center;
+    }
+}
+@media (max-width: 524px) {
+    .kurs-block {
+        justify-content: center;
+    }
+    .otziv-block {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .otziv-img.six {
+        margin-left: 10px;
+    }
+}
+@media (max-width: 425px) {
+    .hdr-block {
+        max-width: 415px;
+        width: 100%;
+    }
+    .hdr-title {
+        width: 100%;
+    }
+    .hdr-text {
+        width: 100%;
+    }
+    .carousel-item > img {
+        width: 320px;
+        height: 320px;
+    }
+    .btn-block {
+        margin-top: 0;
+    }
+}
+@media (max-width: 360px) {
+    .hdr-block {
+        margin-top: 20px;
+    }
+    .hdr-block-btn {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
